@@ -65,7 +65,7 @@ const employees = [
     }
 ];
 
-app.get('/employees', (req, res) => {
+app.get('/', (req, res) => {
   res.json({ employees });
 });
 
