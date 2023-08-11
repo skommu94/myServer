@@ -66,7 +66,7 @@ const employees = [
 ];
 
 app.get('/', (req, res) => {
-  res.json({ employees });
+  res.json( employees );
 });
 
 const PORT = 5000;
