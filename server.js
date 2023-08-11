@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 
 const employees = [
@@ -65,8 +66,11 @@ const employees = [
     }
 ];
 
+// Use the cors middleware to enable CORS
+app.use(cors());
+
 app.get('/', (req, res) => {
-  res.json( employees );
+  res.json(employees );
 });
 
 const PORT = 5000;
